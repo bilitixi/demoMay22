@@ -42,7 +42,7 @@ jobs:
   
       - name: Run tests inside Docker container
         run: |
-            docker run --name flask-cicd-container -d flask-cicd-demo
-            docker exec -it flask-cicd-container pytest
+           docker run --name flask-cicd-container -d flask-cicd-demo
+           docker exec flask-cicd-container pytest
         
     
